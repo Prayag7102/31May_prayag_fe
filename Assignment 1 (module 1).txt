@@ -1,0 +1,26 @@
+
+
+								                   Assignment-1 (MODULE-1)
+
+
+
+
+1) whats is web site? explain in brief.
+
+- A web site is a collection of web pages.Basically web site has a two types 1.static websites and 2.dynamic web sites
+
+2) what is web server? explained in brief.
+
+- web server is a collection of data.web server has a large amount of database
+
+3) what is web browser?
+
+- web browser is platform where you can upload your website.
+
+4) what is search engine ?
+
+- search engine is a where you can serach for information or anything what you want to know. there are some search engine avalible like google, bing, yahoo, duckduckgo.
+
+5) what is web pages?
+
+-  web pages is a part of the websites were pages contain some picture,video, link or some kind of code written in programming langauge like html.
