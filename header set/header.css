@@ -1,0 +1,68 @@
+body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji" ;
+}
+.header {
+    height: 50px;
+    width: 100%;
+    /* border: 1px solid black; */
+}
+
+.header .first {
+    width: 10%;
+    height: 50px;
+    /* border: 1px solid black; */
+    float: left;
+}
+
+.header .first img {
+    margin-left: 150px;
+    width: 130px;
+    height: 45px;
+    /* border: 1px solid black; */
+}
+
+.header .second {
+    width: 79%;
+    height: 50px;
+    /* border: 1px solid black; */
+    float: right;
+}
+
+.header .second li {
+    width: 12%;
+    height: 20px;
+    float: right;
+    list-style: none;
+}
+
+.header .second li a {
+    text-decoration: none;
+    /* font-weight: 10px; */
+    font-size: 14px;
+    /* border: 1px solid black; */
+    padding: none;
+}
+
+.header.second li a:active {
+    color:#00572d;
+}
+
+.header .second li a:visited {
+    color: #00572d;
+}
+
+.third {
+    width: 100%;
+    height: 400px;
+    margin-top: 10px;
+    background-image: url('https://lapinozpizza.in/assets/wla_new/lapinoz/img/banner1.jpg');
+    background-size: 100% 100%;
+    filter: brightness(0.5);
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    color: white;
+    filter: brightness(1);
+}
