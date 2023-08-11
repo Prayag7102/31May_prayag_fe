@@ -1,0 +1,59 @@
+for background image:-  background: url('../../image/image-4.jpg')
+
+you can set background size:- background-size: 100% 100%;
+
+background size has two properties
+
+1.contain
+2.cover
+
+and also define with two values like above example.it set horizontel and second value set vertically
+
+
+background repeat:-
+
+
+- when you set a background and its repeat so you can use this propertie given below 
+
+-> background-repeat: no-repeat;
+
+it has four properties 
+
+1.by default -> Repeat
+
+2. no- repeat
+
+3.repeat x
+
+4. repeat y
+
+
+how can u stratch image to the border:-
+
+it has two properties 
+
+1. bagckground-clip
+
+2.background-origin
+
+-> when you use background color and strecth to the border the background-clip properties use that time
+
+-> when you use background image  and strecth to the border the background-origin properties use
+
+
+background-clip has values given below 
+
+1.border box
+2.content box 
+3.inherit
+
+same as background-origin
+
+
+Background attachment:- 
+
+it use when background image scroll with content and it has properties to stop the image scrolling 
+
+ background-attachment: fixed;
+
+--> by default properties is scroll

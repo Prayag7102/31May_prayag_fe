@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>After</title>
+    <style>
+        body{
+            background: #000;
+        }
+        div > p{
+            color: #f00;
+        }
+        div ul li{
+            color: red;
+        }
+        div .li::after{
+            content: " ";
+            color: navy;
+            margin: 50px;
+            border: 1px solid rebeccapurple;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus expedita porro officiis iusto quam, voluptas doloremque laborum quas suscipit mollitia ratione aperiam quisquam voluptatum libero quis corrupti, consequuntur voluptatem illo!</p>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li class="li">Contact</li>
+            <li>Log-in</li>
+        </ul>
+    </div>
+</body>
+</html>

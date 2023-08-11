@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before</title>
+    <style>
+        h1{
+            counter-reset: x;
+        }
+        ul li{
+            color: navy;
+        }
+        ul li::before{
+            content: counter(x);
+            counter-increment: x;
+        }
+        div{
+            counter-reset: y;
+        }
+        h2::before{
+            counter-increment: y;
+            content: counter(y) ". ";
+        }
+        h2{
+            counter-reset: z;
+        }
+        p::before{
+            content: counter(y) "." counter(z) "  ";
+            counter-increment: z;
+        }
+    </style>
+</head>
+<body>
+    <h1>Counter list</h1>
+    <ul>
+        <li>Home</li>
+        <li>Menu</li>
+        <li>Order</li>
+        <li>Feed back</li>
+        <li>Contact us</li>
+    </ul>
+    <div>
+    <h2>hot Drink</h2>
+    <p>Tea</p>
+    <p>coffee</p>
+    <h2>Cold Drink</h2>
+    <p>Tea</p>
+    <p>Coffee</p>
+    </div>
+</body>
+</html>

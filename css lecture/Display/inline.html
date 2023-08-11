@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline</title>
+    <style>
+        ul {
+            height: 70px;
+            width: auto;
+            background-color:#79a58d ;
+            text-align: center;
+            line-height: 70px;
+        }
+        ul li{
+            list-style: none;
+            display: inline;
+            color: black;
+            font-size: 20px;
+            margin: 5px;
+            padding: 50px;
+        }
+        .parent{
+            position: relative;
+            
+        }
+        .menu{
+            height: auto;
+            width: 170px;
+            position: absolute;
+            top: 90px;
+            left: -12px;
+            display: none;
+            transition: 1s;
+        }
+        .parent:hover .menu{
+            display: block;
+        }
+        .menu li{
+            display: block;
+            line-height: 0;
+            margin: 0px;
+            padding: 15px;
+
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>Home</li>
+        <li class="parent">Menu
+            <ul class="menu">
+                <li>Gujarati</li>
+                <li>Punjabi</li>
+                <li>South indian</li>
+            </ul>
+        </li>
+        <li>About us</li>
+        <li>Contact us</li>
+        <li>Login</li>
+
+    </ul>
+</body>
+</html>
