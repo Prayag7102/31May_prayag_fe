@@ -1,0 +1,59 @@
+1.<html>: Represents the root element of an HTML page.
+
+2.<head>: Contains metadata and other information about the HTML page.	
+										
+3.<title>: Defines the title of the HTML page, displayed in the browser's title bar or tab.
+							
+4.<body>: Contains the visible content of the HTML page.
+										
+5.<h1> to <h6>: Heading elements, used to define different levels of headings.
+				
+6.<p>: Defines a paragraph.
+							
+7.<a>: Creates a hyperlink to another page or resource.
+						
+8.<img>: Inserts an image into the HTML page.
+						
+9.<ul>: Defines an unordered (bulleted) list.
+						
+10.<ol>: Defines an ordered (numbered) list.
+									
+11.<li>: Represents a list item within an ordered or unordered list.
+								
+12.<div>: Defines a division or a section in an HTML document.
+											
+13.<span>: Inline element used to group and apply styles to a specific portion of text.
+								
+14.<form>: Used to create an interactive form for user input.
+						
+15.<input>: Creates an input field within a form.
+					
+16.<button>: Creates a clickable button.
+							
+17.<label>: Associates a label with a form control.
+					
+18.<select>: Creates a dropdown list.
+							
+19.<option>: Represents an option in a dropdown list.
+				
+20.<table>: Defines a table.
+				
+21.<tr>: Represents a table row.
+				
+22.<td>: Defines a table cell.
+											
+23.<thead>, <tbody>, <tfoot>: Groups the header, body, and footer content in a table.
+					
+24.<th>: Defines a table header cell.
+							
+25.<iframe>: Embeds an inline frame within the HTML page.
+				
+26.<audio>: Embeds audio content.
+				
+27.<video>: Embeds video content.
+							
+28.<canvas>: Provides a space for graphics and animations.
+								
+29.<footer>: Defines the footer of a section or the whole document.
+									
+30.<header>: Represents the header of a section or the whole document

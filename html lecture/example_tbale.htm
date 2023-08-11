@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Structured Table</title>
+    <style>
+        table, th, td{
+            border: 2px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <table border="1px" cellpadding="10px">
+        <caption>Product Detail</caption>
+        <thead style="background: #000; color: #fff;">
+            <tr>
+                <th>#</th>
+                <th>Product Name</th>
+                <th>Price</th>
+                <th>Qty</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Book</td>
+                <td>120	&#8377;</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Smart Phone Cover</td>
+                <td rowspan="2">499 &#8377; </td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Smart Phone Charger</td>
+                <!-- <td>499 &#8377; </td> -->
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Laptop Stand</td> 
+                <td>1200	&#8377;</td>
+                <td>5</td>
+            </tr>
+            
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4" style="text-align: end;">Total:&nbsp;8097&#8377; </td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
