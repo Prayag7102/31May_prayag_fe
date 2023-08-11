@@ -1,0 +1,19 @@
+*{
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji" ;;
+}
+.ifm{
+    border: 1px solid black;
+    background-color:rgba(241, 241, 241, 0.9);
+    /* background: transparent; */
+    
+}
+body{
+    background: url('https://img.freepik.com/free-photo/grunge-paint-background_1409-1337.jpg?w=2000');
+    background-size: cover;
+    background-attachment: fixed;
+}
+.if{
+    border: 1px solid black;
+    background-color: darkolivegreen;
+    
+}

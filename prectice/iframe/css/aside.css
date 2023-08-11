@@ -1,0 +1,23 @@
+*{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji" ;
+}
+body{
+    background-color:darkslategrey;
+}
+a{
+    text-decoration: none;
+    color:azure;
+}
+a:hover{
+    text-decoration: underline;
+}
+/* li::after{
+    content: " ";
+    color: coral;
+    margin: 50px;
+    border: 1px solid red;
+} */
+::selection{
+    color: cornsilk;
+    background-color:crimson;
+}
