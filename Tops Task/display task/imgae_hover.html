@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task</title>
+    <style>
+        .main{
+            height: 500px;
+            width: 50%;
+            margin: 50px auto;
+            overflow: hidden;
+            position: relative; 
+        }
+        .main .image{
+            width: 100%;
+        }
+        .main .image img{
+            height: 500px;
+            
+            height: inherit;
+            width: 100%;
+        }
+        .div1{
+            height: 700px;
+            background: rgba(0, 0, 0, 0.3);
+            /* border: 1px solid red; */
+            position: absolute;
+            width: 50%;
+            top: 80%;
+            left: -35%;
+            transition: 1s;
+        }
+        .div2{
+            height: 700px;
+            background: rgba(0, 0, 0, 0.3);
+            /* border: 1px solid red; */
+            position: absolute;
+            width: 50%;
+            top: -120%;
+            left: 85%;
+            transition: 1s;
+        }
+         .main:hover .div1{
+            height: 500px;
+            position: absolute;
+            width: 100%;
+            top: 0;
+            left: 0;
+        }
+        .main:hover .div2{
+            height: 500px;
+            position:absolute;
+            width: 100%;
+            top: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="image">
+            <img src="https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D&w=1000&q=80" alt="">
+        </div>
+        <div class="div1">
+
+        </div>
+        <div class="div2">
+
+        </div>
+    </div>
+</body>
+</html>
