@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task</title>
+</head>
+
+<body>
+    <input type="text" id="inp-1" placeholder="enter first value"><br>
+    <input type="text" id="inp-2" placeholder="enter second value"><br>
+    <select name="" id="color">
+        <option value="green">green</option>
+        <option value="red">red</option>
+        <option value="yellow">yellow</option>
+    </select><br>
+    <button type="button" onclick="answer()">answer</button><br>
+    <span id="span"></span>
+
+
+
+
+    <script>
+        let num1 = document.getElementById('inp-1');
+        let num2 = document.getElementById('inp-2');
+        let opt = document.getElementById('color');
+        console.log(opt);
+
+        function answer() {
+            num1 = parseInt(document.getElementById('inp-1').value);
+            num2 = parseInt(document.getElementById('inp-2').value);
+            if (num1 > num2) {
+                document.getElementById('span').innerHTML = true;
+            }
+            else {
+                document.getElementById('span').innerHTML = false;
+            }
+            let cs = document.getElementById('span').style.color = opt.value;
+            console.log(cs);
+        }  
+    </script>
+</body>
+
+</html>
