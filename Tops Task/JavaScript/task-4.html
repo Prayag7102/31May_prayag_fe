@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task 4</title>
+    <style>
+        .img{
+            height: 500px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <img id="img" src="https://cdn.pixabay.com/photo/2018/01/12/10/19/fantasy-3077928_1280.jpg" alt="">
+    <button onclick="next_img()">Next</button>
+
+    <script>
+        let img = document.getElementById('img');
+        img.classList.add('img')
+        function next_img(){
+            if(img.src == 'https://cdn.pixabay.com/photo/2018/01/12/10/19/fantasy-3077928_1280.jpg')
+            {
+                img.src = 'https://media.istockphoto.com/id/1367357589/photo/red-heart-shaped-sky-at-sunset-beautiful-landscape-with-flowers-love-background-with-copy.jpg?s=2048x2048&w=is&k=20&c=INaueU704ENKRm5HIyzWBxKjkP2Q4xdmzQRmWD1kT4A='
+            }
+            else if(img.src == 'https://media.istockphoto.com/id/1367357589/photo/red-heart-shaped-sky-at-sunset-beautiful-landscape-with-flowers-love-background-with-copy.jpg?s=2048x2048&w=is&k=20&c=INaueU704ENKRm5HIyzWBxKjkP2Q4xdmzQRmWD1kT4A=')
+            {
+                img.src= 'https://media.istockphoto.com/id/912432850/photo/young-man-with-view-over-the-clouds.jpg?s=2048x2048&w=is&k=20&c=gS93wW9s3rjU9t4dLyMo_vMxZJcu4xt142UUkCUu14g='
+            }
+            else{
+                img.src = 'https://cdn.pixabay.com/photo/2018/01/12/10/19/fantasy-3077928_1280.jpg'
+            }
+        }
+    
+    </script>
+</body>
+</html>
