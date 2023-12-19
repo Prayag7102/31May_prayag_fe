@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Password Checker</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<style>
+  .password-strength {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+</style>
+</head>
+<body>
+
+<div>
+  <label for="password">Enter Password:</label>
+  <input type="password" id="password">
+  <div class="password-strength"></div>
+</div>
+
+<script>
+$(document).ready(function(){
+  $('#password').keyup(function(){
+    var password = $(this).val();
+    var strength = 0;
+
+    // Define patterns for password
+    var length = /.{8,}/;
+    var lowercase = /[a-z]/;
+    var uppercase = /[A-Z]/;
+    var number = /[0-9]/;
+    var specialChar = /[!@#$%^&*()_+{}\[\]:;<>,.?/~\\-]/;
+
+    // Check 
+    if (length.test(password)) {
+      strength += 1;
+    }
+    if (lowercase.test(password)) {
+      strength += 1;
+    }
+    if (uppercase.test(password)) {
+      strength += 1;
+    }
+    if (number.test(password)) {
+      strength += 1;
+    }
+    if (specialChar.test(password)) {
+      strength += 1;
+    }
+
+    // Display the strength message 
+    if (strength < 2) {
+      $('.password-strength').text('Weak');
+      $('.password-strength').css("color", "red")
+    } else if (strength < 4) {
+      $('.password-strength').text('Moderate');
+      $('.password-strength').css("color", "skyblue")
+    } else {
+      $('.password-strength').text('Strong');
+      $('.password-strength').css("color", "green")
+    }
+  });
+});
+</script>
+
+</body>
+</html>
