@@ -1,0 +1,356 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+.main{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.main .image{
+    height: 700px;
+    width: inherit;
+}
+
+.main .image img{
+    height: inherit;
+    width: 100%;
+    position: absolute;
+    filter: brightness(0.3);
+    clip-path: polygon(50% 0%, 100% 0, 100% 84%, 52% 99%, 0 84%, 0 0);
+}
+
+.main .logo{
+    /* background: blue;     */
+    height: 50px;
+    width: 150px;
+    position: absolute;
+    top: 30px;
+    left: 250px;
+}
+.main .logo img{
+    border-radius: 20px;
+}
+
+.main .navbar{
+    height: 50px;
+    width: 50%;
+    position: absolute;
+    right:100px;
+    top: 20px;
+    /* background: bisque; */
+}
+
+.navbar .menu{
+    height: 50px;
+    width: 100%;
+    line-height: 60px;
+    list-style: none;
+    /* background-color: bisque; */
+}
+
+.navbar .menu li{
+    display: inline;
+    padding: 15px;
+    /* border: 2px solid black; */
+}
+
+.navbar .menu li a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+}
+.navbar .menu li a:focus{
+    color: tomato;
+}
+.navbar .menu li a:hover{
+    color: tomato;
+}
+/* .navbar .menu .items::after{
+    content: "";
+    width: 10%;
+    transition: 2s;
+}
+.navbar .menu .items:hover::after{
+    content: "";
+    height: 3px;
+    width: 60px;
+    height: 2px;
+    top: 60px;
+    left: 0;
+   
+    line-height: 50px;
+    
+} */
+.navbar .menu .items a:focus::after{
+   content: "";
+   height: 2px;
+   width: 25px;
+   position: absolute;
+   bottom: -10px;
+
+   background: tomato;
+}
+
+/* header end */
+
+/* content start */
+
+.navbar .content{
+    height: 500px;
+    width: 100%;
+    /* background-color: bisque; */
+    position: relative;
+    left: -250px;
+    top: 50px;
+    text-align: center;
+}
+.navbar .content .heading{
+    /* background-color: black; */
+    height: 200px;
+    width: 100%;
+    position: absolute;
+    top: 100px;
+    padding: 10px;
+}
+.navbar .content .heading h1,h3{
+    color: white;
+}
+.heading h1{
+    font-size: 70px;
+    padding-top: 20px;
+}
+.heading .underline{
+    height: 10px;
+    width: 10px;
+    background-color: red;
+    margin: 20px auto;
+    border-radius: 50%;
+}
+
+.heading .underline::before{
+    position: absolute;
+    right: 50%;
+    bottom: 42px;
+    height: 1px;
+    width: 80px;
+    background: #eee;
+    content: "";
+    display: inline-block;
+    margin-right: 20px;
+}
+.heading .underline::after{
+    position: absolute;
+    left: 50%;
+    bottom: 42px;
+    height: 1px;
+    width: 80px;
+    background: #eee;
+    content: "";
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.content .info{
+    height: 70px;
+    width: 60%;
+    /* background-color: bisque; */
+    position: absolute;
+    top: 290px;
+    text-align: center;
+    left: 20%;
+    line-height: 15px;
+}
+.info p{
+    font-size: 10px;
+    color: white;
+    font-weight: 10;
+}
+.content .button{
+    height: 100px;
+    width: 60%;
+    /* background-color: bisque; */
+    position: absolute;
+    top: 375px;
+    left: 20%;
+    display: flex;
+}
+.content .button .button1{
+    height: 40px;
+    width: 40%;
+    background-color: tomato;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    line-height: 38px;
+    border-radius: 5px;
+}
+.button1 span{
+    font-size: 12px;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+.content .button .button1:hover{
+   outline: 3px solid rgba(238, 238, 238, 0.488);
+   outline-offset: 10px;
+   transition: 1s;
+}
+.content .button .button2{
+    height: 40px;
+    width: 40%;
+    background-color: transparent;
+    position: absolute;
+    border: 1px solid white;
+    top: 10px;
+    right: 20px;
+    line-height: 38px;
+    border-radius: 5px;
+}
+.button2 span{
+    color: white;
+    font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+}
+.content .button .button2:hover{
+    background-color: tomato;
+    transition: 1s;
+
+}
+.content .anchor{
+    height: 60px;
+    width: 60px;
+    margin: 0 auto;
+    background-color: bisque;
+    position: relative;
+    top: 540px;
+    right: 2%;
+    border-radius: 50%;
+    outline: 4px solid rgba(242, 237, 237, 0.4);
+}
+.anchor svg{
+    position: absolute;
+    top: 10px;
+    left: 9px;
+}
+/* content end */
+
+/* card start */
+.cards{
+    height: auto;
+    width: 100%;
+    position: relative;
+    top: 90px;
+    /* background-color: black; */
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+.cards .card{
+    height: 250px;
+    width: 15%;
+    margin: 10px;
+    /* position: absolute; */
+    /* background-color: red; */
+}
+.cards .card .icon{
+    height: 60px;
+    width: 80px;
+    margin: 0 auto;
+    border: 1px solid brown;
+    
+}
+.infinity{
+    position: absolute;
+    left: 375px;
+    top: 27px;
+}
+h4 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    color: black;
+    font-size: 1.286rem;
+    line-height: 100px;
+    /* margin-bottom: 1rem; */
+    text-transform: uppercase;
+    margin-left: 35px;
+}
+.sleek::after{
+    content: "";
+    height: 3px;
+    width: 40px;
+    background-color: gray;
+    position: absolute;
+    left: 360px;
+    top: 150px;
+    bottom: 100px;
+}
+.heart{
+    position: absolute;
+    left: 625px;
+    top: 27px;
+}
+.clean::after{
+    content: "";
+    height: 3px;
+    width: 40px;
+    background-color: gray;
+    position: absolute;
+    top: 150px;
+    left:620px ;
+}
+
+.card  p{
+    font-size: 8px;
+    text-align: center;
+    color: grey;
+}
+
+.idea{
+    position: absolute;
+    left: 875px;
+    top: 28px;
+}
+.creative::after{
+    content: "";
+    height: 3px;
+    width: 40px;
+    background-color: gray;
+    position: absolute;
+    top: 150px;
+    left:865px ;
+}
+.message{
+    position: absolute;
+    top: 29px;
+    left: 74%;
+}
+.free{
+    font-size: 22px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 550;
+    position: absolute;
+    top: 105px;
+    left: 1040px;
+}
+.free::after{
+    content: "";
+    height: 3px;
+    width: 40px;
+    background-color: gray;
+    position: absolute;
+    top: 45px;
+    right: 60px;
+    
+}
+.support{
+    position: absolute;
+    top: 170px;
+    width: 10%;
+    right: 310px;
+}

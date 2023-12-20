@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Q-9</title>
+    <style>
+      .q9 {
+        color: cadetblue;
+        background-color: black;
+        padding: 20px;
+        font-size: 30px;
+      }
+      p {
+        font-size: 30px;
+        color: brown;
+      }
+      .image-before {
+        height: 700px;
+        background: url("https://images.unsplash.com/photo-1575936123452-b67c3203c357?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D");
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+      }
+      .image-after {
+        height: 700px;
+        background: url("https://images.unsplash.com/photo-1575936123452-b67c3203c357?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+      }
+    </style>
+  </head>
+  <body>
+    <p class="q9">
+      Q.9 Which property controls the image scroll in the background?
+    </p>
+    <p>
+      The property that controls the scrolling behavior of a background image in
+      CSS is called background-attachment. This property specifies whether the
+      background image should scroll with the content or remain fixed within the
+      viewport as the content scrolls.
+      <br />
+      The background-attachment property can take the following values:
+      <br /><br />
+      1.scroll: This is a default value.
+      <br />
+      <br />
+      2.fixed: The background image remains fixed in place within the viewport.
+      Even when the user scrolls the webpage, the background image stays in its
+      specified position.
+    </p>
+
+    <h1>background-attachment scroll</h1>
+    <div class="image-before"></div>
+
+    <h1>background-attachment fixed</h1>
+    <div class="image-after"></div>
+  </body>
+</html>
