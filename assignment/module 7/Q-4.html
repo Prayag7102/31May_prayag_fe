@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Q-4</title>
+    <style>
+      .q4 {
+        color: aliceblue;
+        background-color: black;
+        font-size: 30px;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <p class="q4">Q.4 Event bubbling tickling example</p>
+
+    <div id="outer" style="border: 1px solid black; padding: 20px;">
+        Outer Div
+        <div id="middle" style="border: 1px solid blue; padding: 20px;">
+          Middle Div
+          <div id="inner" style="border: 1px solid red; padding: 20px;">
+            Inner Div
+          </div>
+        </div>
+      </div>
+      
+
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+    <script>
+     $(document).ready(function() {
+  $('#inner').click(function(event) {
+    alert("Inner div clicked!");
+    event.stopPropagation(); // Stops the event from bubbling up further
+  });
+
+  $('#middle').click(function() {
+    alert("Middle div clicked!");
+  });
+
+  $('#outer').click(function() {
+    alert("Outer div clicked!");
+  });
+});
+
+    </script>
+  </body>
+</html>

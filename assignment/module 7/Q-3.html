@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q-3</title>
+    <style>
+        .q3{
+            color:aliceblue;
+            background-color: black;
+            font-size: 30px;
+            padding: 20px;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #hero {
+            height: 550px;
+            width: 50%;
+            border: 1px solid red;
+            margin: auto;
+        }
+
+        #hero img {
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://malsup.github.io/jquery.cycle.all.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#hero').cycle('shuffle','scrollRight');
+        });
+    </script>
+</head>
+<body>
+    <p class="q3">Q.3 How to create slider with animation?</p>
+        <div>With the help of CSS and jQuery method called 'cycle' and the value shuffle you can create slider with animation</div>
+    <div id="hero">
+        <img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/banner1.jpg"
+            alt="">
+        <img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/banner2.jpg"
+            alt="">
+        <img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/banner3.jpg"
+            alt="">
+        <img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/banner4.jpg"
+            alt="">
+        <img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/banner5.jpg"
+            alt="">
+    </div>
+</body>
+</html>

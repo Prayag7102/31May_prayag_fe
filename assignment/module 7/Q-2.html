@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Q-2</title>
+    <style>
+      .q2 {
+        color: aliceblue;
+        background-color: black;
+        font-size: 30px;
+        padding: 20px;
+      }
+      div {
+        font-size: 30px;
+        margin-bottom: 20px;
+      }
+
+      .color {
+        height: 150px;
+        width: 50%;
+        margin: 50px auto;
+        color: bisque;
+        background-color: black;
+      }
+    </style>
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+  </head>
+  <body>
+    <p class="q2">
+      Q.2 How to Apply CSS Using JQuery, How to Add Class and Remove Class in
+      Jquery, JQuery Animation?
+    </p>
+
+    <div>
+      You can directly manipulate CSS properties of an element using the .css()
+      method in jQuery. <br />Here's example:-
+    </div>
+
+    <div id="mydiv">Hello Good Morning</div>
+
+    <div>
+      Add/Remove class:- Using classes is a cleaner way to apply styles. You can
+      add or remove classes using jQuery: <br />Example:- <h1>After 6 second the class will remove</h1> 
+    </div>
+
+    <div id="box">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
+      molestiae vitae veritatis sapiente ex aperiam iste laudantium beatae
+      veniam alias?
+    </div>
+    <h1>After 3 second the class will add.</h1>
+    <div id="box1">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
+      molestiae vitae veritatis sapiente ex aperiam iste laudantium beatae
+      veniam alias?
+    </div>
+    <script>
+      // Syntax to apply CSS to an element using jQuery
+      $(document).ready(function () {
+        // Apply CSS properties to an element with ID "mydiv"
+        $("#mydiv").css({
+          color: "red",
+          "font-size": "20px",
+          "background-color": "lightblue",
+        });
+      });
+
+      // Syntax to add and remove classes using jQuery
+      $(document).ready(function () {
+        // Add a class to an element with ID "box"
+        $("#box").addClass("color");
+
+        // Remove a class from the same element after some time 
+        setTimeout(function () {
+          $("#box").removeClass("color");
+        }, 6000)
+        
+      });
+      setTimeout(()=>{
+        $("#box1").addClass("color");
+      },6000)
+    </script>
+  </body>
+</html>
