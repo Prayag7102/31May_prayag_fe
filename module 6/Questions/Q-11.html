@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Q-11</title>
+    <style>
+      .q11 {
+        color: aliceblue;
+        background-color: black;
+        font-size: 30px;
+        padding: 20px;
+      }
+      div{
+        font-size: 30px;
+        margin-bottom: 30px;
+        color: brown;
+      }
+      span{
+        color: navy;
+      }
+    </style>
+  </head>
+  <body>
+    <p class="q11">Q.11 The delete operator in JavaScript is used to remove a property from an object or to remove an element from an array. Its function depends on what you're trying to delete:</p>
+
+    <div>
+      From Objects:<br>
+      <span>const obj = { a: 1, b: 2, c: 3 };
+
+        // Delete a property from the object
+        delete obj.a;
+        // Now obj will be { b: 2, c: 3 }
+        </span>
+    </div>
+
+    <div style="color: brown;">
+      Deleting Array Elements:<br>
+      <span>const arr = [1, 2, 3, 4, 5];
+
+        // Delete an element from the array
+        delete arr[2];
+        // Now arr will be [1, 2, <empty>, 4, 5]
+        // Note: The array length doesn't change, but the deleted element becomes undefined.
+        </span>
+    </div>
+  </body>
+</html>

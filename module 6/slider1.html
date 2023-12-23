@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+    <link rel="stylesheet" href="slider1.css" />
+  </head>
+  <body>
+    <div class="slider">
+      <div class="item">
+        <div class="box" style="background-color: red;"></div>
+      </div>
+      <div class="item">
+       <div class="box" style="background-color: blue;"></div>
+      </div>
+      <div class="item">
+        <div class="box" style="background-color: green;"></div>
+      </div>
+      <div class="item">
+       <div class="box" style="background-color: yellow;"></div>
+      </div>
+      <div class="item">
+        <div class="box" style="background-color: black;"></div>
+      </div>
+      <div class="item">
+        <div class="box" style="background-color: rgb(33, 199, 177);"></div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script>
+        $(document).ready(function () {
+        $(".slider").slick({
+          infinite: true,
+          slidesToShow: 5,
+          speed: 500,
+        //   fade:true,
+          autoplaySpeed: 5000,
+          infinite: true,
+          autoplay: true,
+          centerMode: true,
+          centerPadding: "0",
+        });
+      });
+    </script>
+  </body>
+</html>

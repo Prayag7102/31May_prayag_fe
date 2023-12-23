@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Markshhet</title>
+    <style>
+      
+    </style>
+  </head>
+  <body>
+    <h1>Marksheet for Information Technology</h1>
+
+    <div style="margin-left: 70px; color: brown; font-size: 20px;" >Enter marks</div>
+    <form>
+      <p>C Language: <input type="number" id="c" /></p>
+      <p>C++ Language: <input type="number" id="cpp" /></p>
+      <p>Database: <input type="number" id="db" /></p>
+      <p>HTML: <input type="number" id="html" /></p>
+      <p>CSS: <input type="number" id="css" /></p>
+      <p>php: <input type="number" id="php" /></p>
+      <p>Core java: <input type="number" id="java" /></p>
+      <p><button type="button" onclick="calculateTotal()">Result</button></p>
+    </form>
+    <p id="total"></p>
+    <p id="per"></p>
+
+    <script>
+      function calculateTotal() {
+        // get the values of the input fields
+        let c = document.getElementById("c").value;
+        let cpp = document.getElementById("cpp").value;
+        let db = document.getElementById("db").value;
+        let html = document.getElementById("html").value;
+        let css = document.getElementById("css").value;
+        let php = document.getElementById("php").value;
+        let java = document.getElementById("java").value;
+
+        // convert the values to numbers
+        c = parseInt(c);
+        cpp = parseInt(cpp);
+        db = parseInt(db);
+        html = parseInt(html);
+        css = parseInt(css);
+        php = parseInt(php);
+        java = parseInt(java);
+
+        // add the values and store the result
+        let total = c + cpp + db + html + css + php + java;
+        let per = total / 7;
+
+        // display the result
+        document.getElementById("total").innerHTML = "Total is: " + total;
+        document.getElementById("per").innerHTML = "percentage is: " + per;
+      }
+    </script>
+  </body>
+</html>
