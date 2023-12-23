@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Q-6</title>
+    <style>
+      .q6 {
+        color: aliceblue;
+        background-color: black;
+        font-size: 30px;
+        padding: 20px;
+      }
+      div {
+        font-size: 30px;
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <p class="q6">Q.6 Write the code for adding new elements dynamically?</p>
+
+    <div>
+      Adding new elements dynamically in JavaScript can be done using the
+      createElement method to create new elements and then appending them to an
+      existing element in the HTML DOM using appendChild or similar methods.
+      <br />
+      Example:
+    </div>
+
+    <div id="content">
+      <h1 style="color: navy">Existing Content</h1>
+    </div>
+
+    <button onclick="addNewElement()">Add New Element</button>
+    <div class="text" style="color: black;">When button was clicked it add element to the existing content</div>
+    <script>
+      function addNewElement() {
+        var newParagraph = document.createElement("p");
+
+        var text = document.createTextNode(
+          "This is a new paragraph added dynamically!"
+        );
+        newParagraph.appendChild(text);
+
+        var contentDiv = document.getElementById("content");
+
+        contentDiv.appendChild(newParagraph);
+      }
+    </script>
+  </body>
+</html>
